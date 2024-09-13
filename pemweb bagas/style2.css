@@ -1,0 +1,56 @@
+/* Add some basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background: url('pertemanan.jpg') no-repeat center center fixed; /* Use a background image */
+    background-size: cover; /* Cover the entire background with the image */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Set the height to 100% of the viewport */
+    flex-direction: column; /* Stack the elements vertically */
+    position: relative; /* Add this to create a containing block for the overlay */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 6, 6, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+/* Style the headings and paragraph */
+h1, h2, p {
+    text-align: justify; /* Center the text */
+    margin: 20px; /* Add some margin for better readability */
+    color: #ffffff; /* Dark gray color */
+}
+
+h1 {
+    font-size: 36px; /* Make the text larger */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px; /* Make the text smaller */
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px; /* Make the text smaller */
+}
+
+/* Style the link */
+h2 a {
+    text-decoration: none; /* Remove underline */
+    color: #d8cb3c; /* Dark gray color */
+}
+
+h2 a:hover {
+    color: #f02525; /* Light yellow color on hover */
+}
